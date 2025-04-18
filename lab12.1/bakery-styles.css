@@ -17,33 +17,12 @@ html {
     margin-right: 5%;
     display: grid;
     grid-template-rows: 3em 20px [main-start] 150px auto 5em [main-end];
-    grid-template-columns:[main-start] 1fr [main-end] repeat(3,20px 150px);
-
+    grid-template-columns: [main-start] 1fr [main-end] repeat(3, 20px 150px);
   }
   
   
   
   /* VISUAL STYLES START HERE */
-  nav{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: -1;
-  }
-
-  #figC{
-    grid-row: 3 / 4;
-    grid-column: span 1 / -1;
-  }
-
-  #figA{
-    grid-area: 3/3/4/4;
-  }
-
-  #figB{
-    grid-area: 3/5/4/6;
-  }
-
   
   /* link styles */
   a:link, a:visited { color: #DC6903; }
@@ -59,6 +38,13 @@ html {
   
   /* nav styles */
 
+  nav {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 8;
+
+  }
 
   nav, footer {
     font-family: verdana, sans-serif;
@@ -100,8 +86,6 @@ html {
     padding: 1em;
     border: double 4px #EADDC4;
     border-radius: 25px;
-    /* grid-row: main-start / main-end;
-    grid-column: main-start / main-end; */
     grid-area: main;
   }
   
@@ -121,4 +105,19 @@ html {
     padding: .5em;
     grid-row: 5/6;
     grid-column: 3/-1;
+  }
+
+  /*id style for fig*/
+
+  #figA{
+    grid-area: 3/3/4/4;
+  }
+
+  #figB{
+    grid-area: 3/5/4/6;
+  }
+
+  #figC{
+    grid-row: 3 / 4;
+    grid-column: span 1 / -1;
   }
