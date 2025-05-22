@@ -1,0 +1,56 @@
+.image-mobile{
+    display: none;
+}
+.image-PC{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+.image-PC img{
+    width: 600px;
+    height: auto;
+}
+@media (max-width:900px) {
+    .main-text h1 {
+        font-size: 40px !important;
+    }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-mobile{
+        display: block;
+    }
+    .image-mobile img{
+        width: 600px;
+        height: auto;
+    }
+    .image-PC{
+        display: none;
+    }
+
+    .data-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviewer {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviewer div img{
+        width: 60%;
+        height: auto;
+        text-align: center;
+    }
+    .parent-review{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+}

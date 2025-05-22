@@ -1,0 +1,78 @@
+
+@media (min-width:900px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* จัดรูปแนวตั้ง */
+    .layout .data-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .layout div {
+        padding-top: 20px;
+    }
+
+    /* จัดแถวแนวนอนผู้รีวิว */
+    .reviewer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .reviewer div {
+        width: 300px;
+
+    }
+
+    .reviewer img {
+        width: 100%;
+        height: auto;
+    }
+
+    .box1ser {
+        display: none !important;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* เมนู บริการด้านล่าง */
+/*  */
+    .boxparent {
+        grid-row-start: 2;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 16px;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .boxparent .box-service {
+        margin: 0 auto;
+        width: 60%;
+        height: auto;
+    }
+
+    /*  */
+    .parent-review {
+        display: flex;
+        flex-direction: column;
+        background-color: #054944;
+        margin: 0 auto;
+        padding: 0 200px;
+    }
+
+    .pl3{
+        text-align: center;
+    }
+}
